@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrZ = [3,11,29,7,12,1,98,17,8,56];
+    let max = arrZ[0];
+    let posit = 0;
+    for (let x = 1; x < arrZ.length; x++) {
+        if (arrZ[x] > max) {
+            max = arrZ[x];
+            posit = x
+        }
+    }
+    document.write("max = " + max + " vi tri thu: " + posit);
+</script>
+</body>
+</html>
