@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrN = [3, 11, 29, 7, 12, 1, 98, 17, 8, 56];
+    let firstNum = 0;
+    let lastNum = arrN.length - 1;
+    while (firstNum < lastNum) {
+        let a = arrN[firstNum];
+        arrN[firstNum] = arrN[lastNum];
+        arrN[lastNum] = a;
+        firstNum++;
+        lastNum--;
+    }
+    document.write(arrN)
+</script>
+</body>
+</html>
