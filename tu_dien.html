@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhap tu: <input type="text" id="str">  <input type="button" value="Dich" onclick="tran()">
+<br><br>
+<h3 id="result" ></h3>
+<script>
+    function tran() {
+        let arrA = ['apple', 'banana', 'pen'];
+        let arrV = ['tao', 'chuoi', 'but'];
+        let TXT = document.getElementById("str").value;
+        let index= 0;
+        let result = "";
+        for (let x = 0; x < arrA.length; x++) {
+            if(TXT == arrA[x]) {
+                index = x
+                for (let y = 0; y < arrV.length; y++) {
+                    if (index == y) {
+                        result = arrV[y];
+                    }
+                }
+            }
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
