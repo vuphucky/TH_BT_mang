@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrA = [3, 11, 29, 7, 12, 1, 98, 17, 8, 56];
+    let arrB =[3, -11, -29, 7, -12, 1, -98, -17, 8, 5];
+    let arrC = new Array(20)
+    for (let i = 0; i < arrA.length; i++) {
+        arrC[i] =  arrA[i];
+        }
+    for (let i = 0; i < arrB.length ; i++) {
+        arrC[arrA.length + i] = arrB[i];
+    }
+    for (let i = 0; i < arrC.length; i++) {
+        document.write(arrC[i]);
+    }
+
+</script>
+</body>
+</html>
