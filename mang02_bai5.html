@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1= [];
+    let arr2= []
+    let num = +prompt('Nhập số kích thước mảng 1');
+    for (let i = 0; i < num; i++) {
+        let elment = +prompt("Nhập phần tử mảng 1 thứ: " + i);
+        arr1.push(elment);
+    }
+    let num2= +prompt('Nhap so kich thuoc mang 2');
+    for (let i = 0; i < num2; i++) {
+        let element2 = +prompt("Nhập vào phần tử mảng 2 thứ " + i);
+       arr2.push(element2);
+    }
+    let isEqual;
+    if(arr1.length !== arr2.length) {
+        isEqual = false;
+    } else {
+        for (let i = 0; i < arr1.length ; i++) {
+            if (arr1[i] !== arr2[i]) {
+                isEqual = false;
+                break;
+            }
+            isEqual = true;
+        }
+    }
+document.write("2 mang bang nhau la: " + isEqual);
+
+</script>
+</body>
+</html>
