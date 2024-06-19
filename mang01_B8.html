@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let arrN=[];
+for (let i = 0; i < 5; i++) {
+    arrN[i] = +prompt("nhap phan tu thu " + i);
+}
+for (let i = 0; i < arrN.length - 1 ; i++) {
+    for (let j = 0; j < arrN.length - 1 - i ; j++) {
+        if (arrN[j] < arrN[j+1]) {
+            let temp = arrN[j];
+            arrN[j] = arrN[j+1];
+            arrN[j +1] = temp
+        }
+    }
+}
+document.write(arrN);
+</script>
+</body>
+</html>
