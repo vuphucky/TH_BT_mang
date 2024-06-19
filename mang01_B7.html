@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrN = [];
+    let numV = +prompt("nhap so ngau nhien");
+    let i,j;
+    for (let i = 0; i < 5; i++) {
+        arrN[i] = parseInt(prompt("Nhap phan tu so: " + i));
+        if (arrN[i] === numV) {
+            for (let j = i; j < arrN.length; j++) {
+                arrN[j] = arrN[j+1];
+            }
+            arrN[j] = 0;
+            break;
+        }
+    }
+document.write(arrN);
+</script>
+</body>
+</html>
